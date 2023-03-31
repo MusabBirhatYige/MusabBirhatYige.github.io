@@ -1,0 +1,273 @@
+/* Boxs' widths are equal */
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Width of boxes */
+
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+
+
+/* Rows */
+
+.row{
+    border: blue solid 2px;
+     background-color: cornflowerblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/*We make sure that the rows do not come next to each other.*/
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+/* For responsive images */
+
+img{
+    width: 100%;
+    height: auto;
+    
+
+}
+
+
+/* col-floating */
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    border: 1px double greenyellow;
+    border-radius: 8px;
+
+    background-color: bisque;
+
+
+}
+
+/* For screens that its width below 500px */
+
+@media screen and (max-width:500px) {
+
+    [class*="col-"]{width: 100%;}
+
+    
+   
+    
+}
+
+
+
+/* Heights of boxes */
+
+#ust{
+    min-height: 100px;
+}
+
+#menu{
+    min-height: 80px;
+}
+
+#orta{
+    min-height: 400px;
+}
+#alt{
+    min-height: 80px;
+
+}
+
+
+
+
+#ikon{
+    width: 50px;
+    float: right;
+    margin-right: 50px;
+}
+
+/* Main Menu */
+
+#menu #anamenu ul{
+    list-style-type: none;
+}
+#menu #anamenu ul li{
+    border: 1px solid blue;
+    width: 25%;
+    float: left;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* For responsive main menu */
+
+@media screen and (max-width:500px) {
+    
+   
+
+    
+    #menu #anamenu ul li {width: 100%;}
+    
+}
+
+
+ /* Main menu links */
+
+
+#menu #anamenu a{
+    color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    font-weight: bolder;
+    padding: 5px;
+    text-decoration: none;
+   
+
+}
+
+#menu #anamenu a:hover{
+    color: blue;
+    text-decoration: line-through;
+}
+
+#menu #anamenu a:active,a:visited{
+    color: purple;
+}
+
+/* Bottom menu css */
+
+
+#alt #altmenu p{
+    text-align: center;
+}
+#alt #altmenu {
+    color: brown;
+    font-weight: bold;
+    text-decoration-style: wavy;
+}
+
+
+#sosyal{
+    min-height: 50px
+}
+
+
+
+/* The slide container */
+.slide-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Slide images */
+  .slide-image {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  /* Active slide */
+  .slide-image.active {
+    opacity: 1;
+  }
+
+  form label,
+  form input,
+  form textarea,
+  form button {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+
+
+
+  /* Styling the contact form */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+ 
+  form input,
+  form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-size: 16px;
+  }
+  
+ 
+  form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2e86de;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  
+  form button[type="submit"]:hover {
+    background-color: #1e65c8;
+  }
+  
+  .location {
+    margin-bottom: 20px;
+  }
+  
+  .map-iframe {
+    border: none;
+  }
+  
