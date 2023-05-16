@@ -20,12 +20,22 @@ function displayResults() {
 	}
   
 	var average = sum / scores.length;
-  
+
+	var highestScoreName;
+	
+	for(var z=0;z<scores.length;z++){
+
+		if(scores[z]==highestScore){
+			break;
+		}
+
+
+	}
 	var resultsDiv = document.getElementById("results");
 	resultsDiv.innerHTML =
 	  "<h2>Results</h2>" +
 	  "<p>Average score: " + average.toFixed(2) + "</p>" +
-	  "<p>Highest score: " + highestScore + "</p>";
+	  "<p>High score = "+ names[highestScoreName]+" with a score of "+ highestScore + "</p>";
   }
 
   function displayScores() {
