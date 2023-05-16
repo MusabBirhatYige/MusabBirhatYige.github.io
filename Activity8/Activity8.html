@@ -20,7 +20,7 @@
     <h2>Form </h2>
     <form action="/submit" method="post">
       <label for="programming-language">What programming language do you know?</label>
-      <input type="text" id="programming-language" name="programming-language" required><br><br>
+      <input type="text" id="programming-language="programming-language" required><br><br>
   
       <label for="birthday">What is your birthday?</label>
       <input type="text" id="birthday" name="birthday" required><br><br>
@@ -45,6 +45,16 @@
       $(document).ready(function() {
         $("#birthday").datepicker();
       });
+    </script>
+    <script>
+
+        var programming_languages=["ActionScript","AppleScript","Asp","JavaScript","Lisp","Perl","PHP","Python"];
+        
+        $( "#programming-language" ).autocomplete({
+                source: programming_languages
+            });
+
+
     </script>
 </body>
 </html>
