@@ -22,8 +22,9 @@ function displayResults() {
 	var average = sum / scores.length;
 
 	var highestScoreName;
+	var z;
 	
-	for(var z=0;z<scores.length;z++){
+	for(z=0;z<scores.length;z++){
 
 		if(scores[z]==highestScore){
 			break;
