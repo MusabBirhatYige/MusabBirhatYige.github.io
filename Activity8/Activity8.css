@@ -5,7 +5,7 @@ form {
   }
   
   label {
-    display: inline-block;
+    display: inline;
     width: 150px;
     text-align: right;
     margin-right: 10px;
