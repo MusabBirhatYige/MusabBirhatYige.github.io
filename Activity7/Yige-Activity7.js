@@ -35,7 +35,7 @@ function displayResults() {
 	resultsDiv.innerHTML =
 	  "<h2>Results</h2>" +
 	  "<p>Average score: " + average.toFixed(2) + "</p>" +
-	  "<p>High score = "+ names[highestScoreName]+" with a score of "+ highestScore + "</p>";
+	  "<p>High score = "+ names[z]+" with a score of "+ highestScore + "</p>";
   }
 
   function displayScores() {
