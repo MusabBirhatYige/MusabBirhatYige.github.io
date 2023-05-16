@@ -1,24 +1,17 @@
 form {
-    display: table;
-    width: 100%;
-  }
-  
-  label,
-  input[type="text"],
-  input[type="email"],
-  input[type="url"] {
-    display: table-row;
-  }
-  
-  label,
-  input[type="text"],
-  input[type="email"],
-  input[type="url"] {
-    display: table-cell;
-    padding: 5px;
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 10px;
   }
   
   label {
     text-align: right;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="url"] {
+    width: 100%;
+    box-sizing: border-box;
   }
   
