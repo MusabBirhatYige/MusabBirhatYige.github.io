@@ -1,20 +1,58 @@
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+/* Set global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
   }
   
   label {
-    display: inline;
-    width: 150px;
-    text-align: right;
-    margin-right: 10px;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
   }
   
   input[type="text"],
   input[type="email"],
   input[type="url"] {
-    width: 300px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  /* Adjust datepicker position */
+  .ui-datepicker {
+    margin-top: 10px;
+  }
+  
+  /* Style error message */
+  .error-message {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 5px;
   }
   
