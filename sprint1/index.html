@@ -7,7 +7,16 @@
     <meta name="description" content="Musabsoft professional web software company's website">
     <meta name="keywords" content="Musabsoft,software,web,design,company,developers">
 
+    <link rel="stylesheet" href="isotopestyle.css">
+
     <link rel="stylesheet" href="Style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+     
+    
+   
     <title>MUSABSOFT SOFTWARE</title>
 </head>
 <body>
@@ -67,6 +76,24 @@
             Thank you for considering our company for your software needs. We look forward to the opportunity to work with you and help take your business to the next level.
             
             Sincerely
+
+
+            <div class="grid">
+                <div class="item red"></div>
+                <div class="item blue"></div>
+                <div class="item green"></div>
+                <div class="item red"></div>
+                <div class="item blue"></div>
+                <div class="item green"></div>
+              </div>
+              
+
+
+
+            
+
+
+              
             
             </p>
 
@@ -115,29 +142,23 @@
 
 
 
+<script> 
+
+$(document).ready(function() {
+  $('.grid').isotope({
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+  });
+});
+
+
+
+</script>
+
 </body>
-
-
-<!-- Line 32-40: This section contains the main content of the webpage which is divided into different sections using semantic HTML tags such as "header", "main", "section", "article", and "footer".
-
-Line 42-53: This section contains a navigation menu using an unordered list element "ul" with "li" items.
-
-Line 55-63: This section contains a header which includes a logo and a search bar.
-
-Line 65-74: This section contains an "aside" element which includes a list of popular courses.
-
-Line 76-85: This section contains a "section" element which includes a heading and an unordered list of upcoming events.
-
-Line 87-95: This section contains an "article" element which includes a heading, an image, and a paragraph.
-
-Line 97-105: This section contains another "article" element which includes a heading, an image, and a paragraph.
-
-Line 107-115: This section contains a "footer" element which includes copyright information and links to social media profiles.
- -->
-
-
-
-
-
 </html>
+
+
+
+
 
