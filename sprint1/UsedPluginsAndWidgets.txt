@@ -1,0 +1,17 @@
+Used jquery plugins:
+
+Colorbox -> in index.html
+
+jQuery Validation Plugin -> in contact.html
+
+Owl Carousel -> in aboutus.html
+
+Used Jquery-UI Widget:
+
+Accordion widget -> in gallery.html
+
+Respond to the form :
+
+Form responding page -> respond.html
+
+
