@@ -1,0 +1,44 @@
+.slidecontact {
+    background-image: url('slide-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .slide-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .slide-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #0057A0;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #002A52;
+    cursor: pointer;
+  }
+  
