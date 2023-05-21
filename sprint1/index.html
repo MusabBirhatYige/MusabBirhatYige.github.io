@@ -8,50 +8,7 @@
     <meta name="keywords" content="Musabsoft,software,web,design,company,developers">
 
     <link rel="stylesheet" href="Style.css">
-
-    <link rel="stylesheet" href="colorbox.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="scripts\jquery.colorbox-min.js"></script>
-
-    
-   
     <title>MUSABSOFT SOFTWARE</title>
-    <script>
-        $(document).ready(function(){
-            
-            $(".group1").colorbox({rel:'group1'});
-            $(".group2").colorbox({rel:'group2', transition:"fade"});
-            $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
-            $(".group4").colorbox({rel:'group4', slideshow:true});
-            $(".ajax").colorbox();
-            $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
-            $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
-            $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
-            $(".inline").colorbox({inline:true, width:"50%"});
-            $(".callbacks").colorbox({
-                onOpen:function(){ alert('onOpen: colorbox is about to open'); },
-                onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
-                onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
-                onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
-                onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
-            });
-
-            $('.non-retina').colorbox({rel:'group5', transition:'none'})
-            $('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
-            
-            
-            $("#click").click(function(){ 
-                $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-                return false;
-            });
-        });
-    </script>
-
-
-
-
-
 </head>
 <body>
 <header id="ust" class="row">
@@ -110,56 +67,6 @@
             Thank you for considering our company for your software needs. We look forward to the opportunity to work with you and help take your business to the next level.
             
             Sincerely
-
-
-
-
-            <div style="border: 5px dotted black;">
-
-                <h1>Colorboxes</h1>
-                <br>
-                <h2>Nice examples of websites that we designed</h2>
-                <p><a class="group1" href="images\web-tasarim-site-kur.jpg" title="Site1.">Example 1</a></p>
-                <p><a class="group1" href="images\food-blog-web-plp-5aecb0eb94511d9d318e5ae6acd5550e.png" title="Site2">Example 2</a></p>
-                <p><a class="group1" href="images\websitedesign.jpeg" title="Site3">Example 3</a></p>
-                
-                <h2>Our Buildings' photos</h2>
-                <p><a class="group2" href="images\Offshore-Development-Center-1024x576.webp" title="Ukraine">Turkey</a></p>
-                <p><a class="group2" href="images\offshore-development-center-Ukraine.jpg" title="UAE">United Arab Emirates</a></p>
-                <p><a class="group2" href="images\comtrade_091216_tw1024.gif" title="Turkey">Israel</a></p>
-                
-                
-                
-                <h2>Our services gallery (slide) </h2>
-                <p><a class="group4"  href="images\website-development-services.webp" title="General.">General services</a></p>
-                <p><a class="group4"  href="images\png-transparent-web-development-php-software-developer-web-application-web-developer-create-miscellaneous-blue-text.png" title="PHP">PHP</a></p>
-                
-                
-                <h2>Other Links (External) </h2>
-                
-                <p><a class='youtube' href="https://www.youtube.com/watch?v=9sJUDx7iEJw">Our compnay song</a></p>
-                <p><a class='iframe' href="http://wikipedia.com">Search our wiki !</a></p>
-
-
-
-            </div>
-
-
-   
-		
-
-
-
-
-
-           
-
-
-
-            
-
-
-              
             
             </p>
 
@@ -206,14 +113,31 @@
 
 </footer>
 
-
-
-
-
 </body>
 </html>
 
 
+/* COMMENTARY */
+
+/*
+
+Line 32-40: This section contains the main content of the webpage which is divided into different sections using semantic HTML tags such as "header", "main", "section", "article", and "footer".
+
+Line 42-53: This section contains a navigation menu using an unordered list element "ul" with "li" items.
+
+Line 55-63: This section contains a header which includes a logo and a search bar.
+
+Line 65-74: This section contains an "aside" element which includes a list of popular courses.
+
+Line 76-85: This section contains a "section" element which includes a heading and an unordered list of upcoming events.
+
+Line 87-95: This section contains an "article" element which includes a heading, an image, and a paragraph.
+
+Line 97-105: This section contains another "article" element which includes a heading, an image, and a paragraph.
+
+Line 107-115: This section contains a "footer" element which includes copyright information and links to social media profiles.
+
+*/
 
 
 

@@ -7,8 +7,6 @@
     <meta name="description" content="Musabsoft professional web software company's website">
     <meta name="keywords" content="Musabsoft,software,web,design,company,developers">
     <link rel="stylesheet" href="contactstyle.css">
-    
-
 
     <link rel="stylesheet" href="Style.css">
     <title>MUSABSOFT SOFTWARE</title>
@@ -67,22 +65,21 @@
         <h1>Contact Us</h1>
         <p>Fill out the form below to get in touch with us:</p>
   
-        <form id="myForm" action="respond.html" method="get">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone">
-        
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-        
-            <button type="submit">Send Message</button>
+        <form action="submit-form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone">
+  
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+  
+          <button type="submit">Send Message</button>
         </form>
-        
 
 
 
@@ -122,59 +119,5 @@
 
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-<script>
-    $(document).ready(function() {
-      $('#myForm').validate({
-        rules: {
-          name: {
-            required: true,
-            minlength: 2
-          },
-          email: {
-            required: true,
-            email: true
-          },
-          phone: {
-            required: true,
-            digits: true
-          }
-        },
-        messages: {
-          name: {
-            required: "Please enter your name",
-            minlength: "Name must be at least 2 characters long"
-          },
-          email: {
-            required: "Please enter your email",
-            email: "Please enter a valid email address"
-          },
-          phone: {
-            required: "Please enter your phone number",
-            digits: "Please enter only digits"
-          }
-        },
-        submitHandler: function(form) {
-          // Store form data in localStorage
-          var formData = {
-            name: $("#name").val(),
-            email: $("#email").val(),
-            phone: $("#phone").val(),
-            message: $("#message").val()
-          };
-          localStorage.setItem("formData", JSON.stringify(formData));
-  
-          // Submit the form
-          form.submit();
-        }
-      });
-    });
-  </script>
-  
-
-
-
-  
 </body>
 </html>
