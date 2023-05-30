@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 	$("#slider").bxSlider({
 		auto: true,
@@ -9,6 +10,16 @@ $(document).ready(function() {
 		moveSlides: 1,
 		pause: 3000,
 		pager: true,
-		pagerCustom: '#pager'
+		pagerCustom: '#pager',
+		pagerType: 'custom',
+		pagerFormat: '{{current}}/{{total}}',
+		onSliderLoad: function(currentIndex) {
+			var totalSlides = this.getSlideCount();
+			$('#pager').text((currentIndex + 1) + '/' + totalSlides);
+		},
+		onSlideAfter: function($slideElement, oldIndex, newIndex) {
+			var totalSlides = this.getSlideCount();
+			$('#pager').text((newIndex + 1) + '/' + totalSlides);
+		}
 	});
 });
