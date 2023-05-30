@@ -37,7 +37,6 @@ $(document).ready(function() {
 			$("#name").next().text("This field is required.");
 			isValid = false;
 		} else {
-			$("#name").val(name);
 			$("#name").next().text("");
 		}
 		$("#name").val(name);
@@ -88,7 +87,7 @@ $(document).ready(function() {
 		minDate: currentDate,
 		maxDate: maxDate,
 		onSelect: function(selectedDate) {
-			$("#arrival_date").val(selectedDate);
+			$(this).val(selectedDate);
 		}
 	});
 
