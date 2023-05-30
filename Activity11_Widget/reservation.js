@@ -75,3 +75,45 @@ $(document).ready(function() {
 		} // end function
 	);	// end submit
 }); // end ready
+
+$(document).ready(function() {
+	$('.tabs ul li a').click(function() {
+		var tabId = $(this).attr('data-tab');
+		$('.tabs ul li a').removeClass('active');
+		$('.tab-content').removeClass('active');
+		$(this).addClass('active');
+		$('#' + tabId).addClass('active');
+	});
+});
+
+$(document).ready(function() {
+	var currentDate = new Date();
+	var maxDate = new Date();
+	maxDate.setDate(currentDate.getDate() + 90);
+
+	$("#arrival_date").datepicker({
+		dateFormat: "yy-mm-dd",
+		minDate: currentDate,
+		maxDate: maxDate,
+		onSelect: function(selectedDate) {
+			$("#arrival_date").val(selectedDate);
+		}
+	});
+});
+
+
+$(document).ready(function() {
+	$("#policies").click(function() {
+		$("#dialog").dialog({
+			modal: true,
+			width: 400,
+			buttons: {
+				Close: function() {
+					$(this).dialog("close");
+				}
+			}
+		});
+	});
+});
+
+
