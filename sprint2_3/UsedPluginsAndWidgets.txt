@@ -1,0 +1,22 @@
+Used jquery plugins:
+
+Colorbox -> in index.html
+
+jQuery Validation Plugin -> in contact.html
+
+Owl Carousel -> in aboutus.html
+
+Used Jquery-UI Widget:
+
+Accordion widget -> in gallery.html
+
+Respond to the form :
+
+Form responding page -> respond.html
+
+IMPORTANT NOTE: 
+
+Since Github servers do not support post and get operations, it may give a 405 error when the form is submitted. In this case, if you refresh the error page (respond.html) a few times, it will work correctly.And it will present you with a response page showing the values ​​you entered in the form.
+
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Musabsoft professional web software company's website">
+    <meta name="keywords" content="Musabsoft,software,web,design,company,developers">
+    <link rel="stylesheet" href="contactstyle.css">
+    
+
+
+    <link rel="stylesheet" href="Style.css">
+    <title>MUSABSOFT SOFTWARE</title>
+</head>
+<body>
+<header id="ust" class="row">
+
+    <div id="foto" class="col-3">
+
+        <a href="index.html"><img src="https://media.foundit.in/career-advice/wp-content/uploads/2021/11/web-developer-interview-questions-and-answers.jpg" alt=""></a>
+        
+    </div>
+    <div id="sosyal" class="col-9">
+        
+        <div id="ikon">
+
+            <a href="https://github.com/MusabBirhatYige/"><img src="images/github.png" alt=""></a>
+            
+        </div>
+        <div id="ikon">
+
+            <a href="#"><img src="images/instagram.png" alt=""></a>
+            
+        </div>
+        <div id="ikon">
+
+            <a href="#"><img src="images/twitter.png" alt=""></a>
+            
+        </div>
+
+
+    </div>
+
+
+
+</header>
+
+
+<nav id="menu" class="row">
+    <div id="anamenu" class="col-12">
+        <ul>
+            <li> <a href="index.html">Main Page</a></li>
+            <li> <a href="aboutus.html">About us</a></li>
+            <li> <a href="gallery.html">Gallery</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div id="orta" class="row">
+    <section id="icerik" class="col-8">
+     
+
+
+        <h1>Contact Us</h1>
+        <p>Fill out the form below to get in touch with us:</p>
+  
+        <form id="myForm" action="respond.html" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        
+            <button type="submit">Send Message</button>
+        </form>
+        
+
+
+
+
+    </section>
+
+    <aside id="yanmenu" class="col-4">
+        <div class="slidecontact">
+            <div class="slide-text">
+              <h2>Revamp Your Online Presence</h2>
+              <p>Our team of expert web designers and developers can create a stunning website that will help you stand out in the digital world.</p>
+              <a href="#icerik" class="button">Contact Us NOW ! Use the form nearby</a>
+            </div>
+          </div>
+          
+    </aside>
+</div>
+
+<footer id="alt" class="row">
+    <div id="altmenu" class="col-12">
+
+
+        <p>
+
+            <a href="index.html">Main Page</a>|
+            <a href="aboutus.html">About us</a>|
+            <a href="gallery.html">Gallery</a>|
+            <a href="contact.html">Contact</a>
+
+        </p>
+
+        <p>
+            All rights reserved . By Musab Birhat Yige . Full stack web development.
+        </p>
+            
+    </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function() {
+      $('#myForm').validate({
+        rules: {
+          name: {
+            required: true,
+            minlength: 2
+          },
+          email: {
+            required: true,
+            email: true
+          },
+          phone: {
+            required: true,
+            digits: true
+          }
+        },
+        messages: {
+          name: {
+            required: "Please enter your name",
+            minlength: "Name must be at least 2 characters long"
+          },
+          email: {
+            required: "Please enter your email",
+            email: "Please enter a valid email address"
+          },
+          phone: {
+            required: "Please enter your phone number",
+            digits: "Please enter only digits"
+          }
+        },
+        submitHandler: function(form) {
+          // Store form data in localStorage
+          var formData = {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            phone: $("#phone").val(),
+            message: $("#message").val()
+          };
+          localStorage.setItem("formData", JSON.stringify(formData));
+  
+          // Submit the form
+          form.submit();
+        }
+      });
+    });
+  </script>
+  
+
+
+
+  
+</body>
+</html>
