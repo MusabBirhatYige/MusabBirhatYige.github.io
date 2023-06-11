@@ -6,10 +6,10 @@ function loadGallery() {
       var response = JSON.parse(xhr.responseText);
       var galleryItems = response;
       var galleryHtml = '';
-      galleryHtml+='HERE IS THE UNITED COLORS OF MUSABSOFT'
+      galleryHtml+='<p>HERE IS THE UNITED COLORS OF MUSABSOFT</p>'
 
       galleryItems.forEach(function(item) {
-        galleryHtml += '<div class="gallery-item" style="display: inline-block;">';
+        galleryHtml += '<div class="item" style="display: inline-block; width=5px height=5px">';
         galleryHtml += '<img src="' + item.url + '" alt="' + item.title + '" style="width: 5px; height: 5px;">';
         galleryHtml += '</div>';
       });
