@@ -18,7 +18,7 @@
         var response = JSON.parse(xhr.responseText);
 
         // Build the HTML content
-        var content = '<h3>Available programmin jobs</h3>';
+        var content = '<h3>Available programming jobs</h3>';
 
         if (response.results.length > 0) {
           content += '<ul>';
