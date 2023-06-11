@@ -1,26 +1,25 @@
 function loadGallery() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'photos.json', true);
-    xhr.onload = function () {
-      if (xhr.status === 200) {
-        var response = JSON.parse(xhr.responseText);
-        var galleryItems = response;
-        var galleryHtml = '';
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'photos.json', true);
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var galleryItems = response;
+      var galleryHtml = '';
 
-        galleryItems.forEach(function (item) {
-          galleryHtml += '<div class="gallery-item">';
-          galleryHtml += '<h3>' + item.title + '</h3>';
-          galleryHtml += '<img src="' + item.url + '" alt="' + item.title + '">';
-          galleryHtml += '<p>' + item.description + '</p>';
-          galleryHtml += '</div>';
-        });
+      galleryItems.forEach(function(item) {
+        galleryHtml += '<div class="gallery-item" style="display: inline-block;">';
+        galleryHtml += '<h3>' + item.title + '</h3>';
+        galleryHtml += '<img src="' + item.url + '" alt="' + item.title + '" width="50" height="50">';
+        galleryHtml += '<p>' + item.description + '</p>';
+        galleryHtml += '</div>';
+      });
 
-        var galleryContainer = document.getElementById('yanmenu');
-        galleryContainer.innerHTML += galleryHtml;
-      }
-    };
-    xhr.send();
-  }
+      var galleryContainer = document.getElementById('yanmenu');
+      galleryContainer.innerHTML += galleryHtml;
+    }
+  };
+  xhr.send();
+}
 
-  document.addEventListener('DOMContentLoaded', loadGallery);
-
+document.addEventListener('DOMContentLoaded', loadGallery);
