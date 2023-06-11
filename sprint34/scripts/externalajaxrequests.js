@@ -6,6 +6,7 @@ function loadGallery() {
       var response = JSON.parse(xhr.responseText);
       var galleryItems = response;
       var galleryHtml = '';
+      galleryHtml+='HERE IS THE UNITED COLORS OF MUSABSOFT'
 
       galleryItems.forEach(function(item) {
         galleryHtml += '<div class="gallery-item" style="display: inline-block;">';
