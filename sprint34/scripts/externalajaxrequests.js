@@ -1,6 +1,6 @@
 function loadGallery() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', '../jsonfiles/photos.json', true);
+    xhr.open('GET', 'sprint34\scripts\photos.json', true);
     xhr.onload = function () {
       if (xhr.status === 200) {
         var response = JSON.parse(xhr.responseText);
