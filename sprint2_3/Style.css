@@ -271,3 +271,11 @@ form {
     border: none;
   }
   
+#ajax-content{
+  border: 1px solid blue;
+
+}
+#ajax-content ul{
+  list-style-type: none;
+
+}
