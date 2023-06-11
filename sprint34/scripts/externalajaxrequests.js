@@ -9,9 +9,7 @@ function loadGallery() {
 
       galleryItems.forEach(function(item) {
         galleryHtml += '<div class="gallery-item" style="display: inline-block;">';
-        
-        galleryHtml += '<img src="' + item.url + '" alt="' + item.title + '" width="50" height="50">';
-        
+        galleryHtml += '<img src="' + item.url + '" alt="' + item.title + '" style="width: 50px; height: 50px;">';
         galleryHtml += '</div>';
       });
 
