@@ -10,7 +10,7 @@ function loadGallery() {
 
       galleryItems.forEach(function(item) {
         galleryHtml += '<div class="item" style="display: inline-block; width=5px height=5px">';
-        galleryHtml += '<img src="' + item.url + '" alt="' + item.title + '" style="width: 5px; height: 5px;">';
+        galleryHtml += '<img src="' + item.url + ' "style="width: 5px; height: 5px;">';
         galleryHtml += '</div>';
       });
 
