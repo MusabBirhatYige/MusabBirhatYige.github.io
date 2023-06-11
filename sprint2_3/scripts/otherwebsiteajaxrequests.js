@@ -49,3 +49,5 @@
   // Call the makeRequest function when the document is fully loaded
   document.addEventListener('DOMContentLoaded', makeRequest);
 
+
+  
